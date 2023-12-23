@@ -4,7 +4,7 @@
     android:layout_height="match_parent">
     <!-- res/layout/activity_personal_area.xml -->
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -38,11 +38,73 @@
             android:layout_alignParentEnd="true"
             android:layout_alignTop="@id/textViewMyGarden"
             android:layout_marginEnd="16dp"
-            android:src="@drawable/Vector"
+            android:src="@drawable/Settings"
         android:background="?android:attr/selectableItemBackground"
         android:contentDescription="Settings" />
+        <TextView
+            android:id="@+id/textViewGreeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Привет, user"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true" />
 
-        <!-- Дополнительные элементы вашего интерфейса могут быть добавлены здесь -->
+        <Button
+            android:id="@+id/buttonSearchByPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_below="@id/imageButtonSettings"
+            android:paddingLeft="24dp"
+            android:paddingTop="16dp"
+            android:paddingRight="24dp"
+            android:paddingBottom="16dp"
+            android:layout_marginTop="80dp"
+            android:background="#00CBA6"
+            android:text="Поиск по фото"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textViewPlantsAdded"
+            android:layout_width="137dp"
+            android:layout_height="85dp"
+            android:layout_below="@id/buttonSearchByPhoto"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="74dp"
+            android:background="#00CBA6"
+            android:padding="20px"
+            android:text="Добавлено растений 157"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewRarePlants"
+            android:layout_width="133dp"
+            android:layout_height="86dp"
+            android:layout_below="@id/textViewPlantsAdded"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="238dp"
+            android:layout_marginTop="-85dp"
+            android:background="#00CBA6"
+            android:padding="20px"
+            android:text="Редкие растения 5"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imageViewNews"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="400dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/news1" />
 
     </RelativeLayout>
 
